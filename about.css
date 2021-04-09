@@ -1,6 +1,15 @@
-*{
+* {
   background-color: aquamarine;
 }
-.center{
+
+.center {
   text-align: center;
+}
+
+.float {
+  float: right;
+}
+
+input {
+  padding: 5px;
 }
