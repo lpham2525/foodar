@@ -1,13 +1,12 @@
-* {
+/* * {
   background-color: aquamarine;
+} */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
 .center {
   text-align: center;
-}
-
-.float {
-  float: right;
 }
 
 input {
