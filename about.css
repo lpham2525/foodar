@@ -8,7 +8,6 @@
   font-size: 3.5rem;
   color: white;
   background-color: rgb(9, 105, 10);
-  /* vertical-align: middle; */
   line-height: 200px;
   height: 200px;
 }
@@ -22,6 +21,55 @@
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  display: block;
+  padding: 18px;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.float {
+  float: right;
+}
+
+.foodbox {
+  width: 100%;
+  height: 500px;
+  opacity: 0.6;
+}
+
+.imgContainer{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: black;
+}
+
 input {
   padding: 5px;
+}
+
+footer {
+  background-color: rgb(9, 105, 10);
+  color: white;
 }
