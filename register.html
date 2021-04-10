@@ -37,7 +37,7 @@
       <div class="container">
       <p>
         <label name="address" class="vAlign">Address</label>
-      <input type="number" placeholder="Address" required>
+      <input type="number" placeholder="Address" required min="1" step="1">
       </p>
       <p>
         <label name="street" class="vAlign">Street</label>
@@ -49,11 +49,18 @@
       </p>
       <p>
         <label name="zip-code">Zip Code</label>
-      <input type="number" placeholder="Zip Code" required>
+      <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="2">
       </p>
       </div>
       <button>Register</button>
     </form>
   </div>
+  <footer class="center">    
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+    <p>&copy;Foodar 2021</p>
+  </footer>
 </body>
 </html>
