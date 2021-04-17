@@ -17,24 +17,47 @@
     <li class="float"><a href="./about.html">About</a></li>
   </ul>
   <div class="imgContainer">
-    <img src="foodboxes.jpg" alt="food in black food containers" class="foodbox">
+    <img src="hershey.gif" alt="food in black food containers" class="foodbox">
     <p class="centered">Welcome to Foodar!</p>
   </div>
   <div class="find">
     <h1>Find a driver near you!</h1>
     <p>Type in your zip code below and click Go! to find a driver near you.</p>
       <p>
-        <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="5">
+        <input type="text" placeholder="Zip Code" required min="1" step="1" maxlength="5" pattern="[^0-9]+" />
+        <!-- <input type="text" pattern="[0-9]" maxlength="5"/> -->
+        <!-- <input id="zip" name="zip" type="number" maxlength="5">
+        <input type="text" pattern="[0-9]{5}" title="Five digit zip code" /> -->
+        <!-- <input id="zip" name="zip" type="text" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$"> -->
+        <!-- <input id="zip" name="zip" type="text" pattern="[0-9]*"> -->
+        <!-- <input type="text" pattern="^\d{5}(-\d{4})?$"> -->
+        <!-- <input type="text" pattern="[0-9]{4}" title="Four digit zip code" /> -->
+        <!-- <input type="text" placeholder="Zip Code" title="Please enter a Zip Code" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$"> -->
         <button>Go!</button>
       </p>
   </div>
 
-    <footer class="center">
+    <footer class="grid">
+        <div class="item1">
       <ul>       
         <li><a href="./about.html">About</a></li>
         <li><a href="./register.html">Register</a></li>
       </ul>
+      </div>
+      <div class="item2">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+      </div>
+      <div class="item3">
+      <p>
+        It's all in the delivery.
+      </p>
+      </div>
+      <div class="center">
       <p>&copy;Foodar 2021</p>
+      </div>
     </footer>
 </body>
 </html>
