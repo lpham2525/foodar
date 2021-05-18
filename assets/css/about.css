@@ -1,4 +1,4 @@
-body{
+body {
   margin-left: 50px;
 }
 
@@ -28,7 +28,7 @@ body{
   grid-template-columns: 1fr 1fr;
 }
 
-input{
+input {
   margin-left: 50px;
   width: 70%;
 }
@@ -46,6 +46,10 @@ input{
   text-align: center;
 }
 
+.header {
+  background-color: rgb(20, 155, 110);
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -54,6 +58,7 @@ ul {
 
 li {
   display: inline;
+  color: white;
 }
 
 a {
@@ -68,13 +73,14 @@ a:hover {
 
 .big {
   font-size: 3rem;
+  padding-left: 10px;
 }
 
 .float {
   float: right;
 }
 
-.foodbox {
+.hershey {
   width: 100%;
   height: 400px;
   opacity: 0.3;
