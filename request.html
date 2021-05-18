@@ -4,47 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/about.css">
   <title>Submit Request</title>
 </head>
 <body>
   <h1>SUBMIT REQUEST</h1>
   <p>Please fill out the form below.</p>
   <form>
-    <div class="container">
+      <div>
       <p>
-        <label for="address" class="vAlign">Address:</label>
+        <!-- <label for="address" class="vAlign">Address:</label> -->
+        <label for="address">Address:</label>
       </p>
       <p>
         <input type="email" placeholder="Email" required>
       </p>
     </div>
     <p>Choose your style:</p>
-    <div class="container">
-      <p>
+    <div class="side">
+      <div class="box">
         <label name="classicRequest" class="vAlign">Classic</label>
         <p>This is the Classic Treatment.</p>
         <input type="radio" id="classic" name="classic" value="classic">
-      </p>
-      <p>
+      </div>
+      <div class="box">
         <label name="premiumRequest" class="vAlign">Premium</label>
         <p>Pinky's Up</p>
         <input type="radio" id="premium" name="premium" value="premium">
-      </p>
-      <p>
-        <label name="royalRequest">Royal</label>
+      </div>
+      <div class="box">
+        <label name="royalRequest" class="vAlign">Royal</label>
         <p>Your food is served on a silver platter. Literally.</p>
         <input type="radio" id="royal" name="royal" value="royal">
-      </p>
+      </div>
     </div>
-    <div class="container">
+    <div>
       <p>
         <label for="restaurantName" class="vAlign">Restaurant Name:</label>
       </p>
       <p>
         <input type="text" placeholder="restaurant name" required>
       </p>
+      <p>Tip:</p>
+      <div class="side">
+        <div class="box">
+          <label name="tenPer" class="vAlign">10%</label>
+          <p>They did their job.</p>
+          <input type="radio" id="tenP" name="tenP" value="tenP">
+        </div>
+        <div class="box">
+          <label name="fifPer" class="vAlign">15%</label>
+          <p>They made me feel special.</p>
+          <input type="radio" id="fifP" name="fifP" value="fifP">
+        </div>
+        <div class="box">
+          <label name="twentyPer" class="vAlign">20%</label>
+          <p class="center">I want to give them more, but this is all I have!</p>
+          <input type="radio" id="twentyP" name="twentyP" value="twentyP">
+        </div>
+      </div>
     </div>
-    <button>Requst</button>
+    <div class='center'>
+      <h1>Total: </h1>
+    <button>Request</button>
+    </div>
   </form>
 </body>
 </html>

@@ -1,7 +1,3 @@
-/* * {
-  background-color: aquamarine;
-} */
-
 .banner {
   width: 100%;
   height: 100px;
@@ -26,6 +22,15 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  border: black solid;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
 }
 
 .center {
@@ -102,4 +107,11 @@ footer {
   grid-template-columns: auto auto auto;
   justify-content: space-between;
   padding-right: 20px;
+}
+
+.side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
