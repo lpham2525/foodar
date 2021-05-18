@@ -17,12 +17,6 @@ body {
   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
 }
 
-.delImg {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
