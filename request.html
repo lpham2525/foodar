@@ -20,7 +20,7 @@
   </div>
   <h1>SUBMIT REQUEST</h1>
   <p>Please fill out the form below.</p>
-  <form>
+  <form class="marginLeft">
       <div>
       <p>
         <label for="address">Address:</label>
@@ -35,24 +35,24 @@
         <label name="classicRequest" class="vAlign">Classic</label>
         <p>This is the Classic Treatment.</p>
         <p>$3</p>
-        <input type="radio" id="classic" name="classic" value="classic">
+        <input type="radio" id="classic" name="style" value="classic">
       </div>
       <div class="box">
         <label name="premiumRequest" class="vAlign">Premium</label>
         <p>Pinky's Up</p>
         <p>$5</p>
-        <input type="radio" id="premium" name="premium" value="premium">
+        <input type="radio" id="premium" name="style" value="premium">
       </div>
       <div class="box">
         <label name="royalRequest" class="vAlign">Royal</label>
         <p>Your food is served on a silver platter. Literally.</p>
         <p>$10</p>
-        <input type="radio" id="royal" name="royal" value="royal">
+        <input type="radio" id="royal" name="style" value="royal">
       </div>
     </div>
     <div>
       <p>
-        <label for="restaurantName" class="vAlign">Restaurant Name:</label>
+        <label for="restaurantName" class="vAlign" required>Restaurant Name:</label>
       </p>
       <p>
         <input type="text" placeholder="restaurant name" required>
@@ -62,23 +62,23 @@
         <div class="box">
           <label name="tenPer" class="vAlign">10%</label>
           <p>They did their job.</p>
-          <input type="radio" id="tenP" name="tenP" value="tenP">
+          <input type="radio" id="tenP" name="tip" value="tenP">
         </div>
         <div class="box">
           <label name="fifPer" class="vAlign">15%</label>
           <p>They made me feel special.</p>
-          <input type="radio" id="fifP" name="fifP" value="fifP">
+          <input type="radio" id="fifP" name="tip" value="fifP">
         </div>
         <div class="box">
           <label name="twentyPer" class="vAlign">20%</label>
           <p class="center">I want to give them more, but this is all I have!</p>
-          <input type="radio" id="twentyP" name="twentyP" value="twentyP">
+          <input type="radio" id="twentyP" name="tip" value="twentyP">
         </div>
       </div>
     </div>
     <div class='center'>
       <h1>Total: <span id='total'></span></h1>
-    <button>Request</button>
+    <button id='request' onclick=sumTotal()>Request</button>
     </div>
   </form>
   <hr>
@@ -98,5 +98,6 @@
     </div>
     <p>&copy;Foodar 2021</p>
   </footer>
+  <script src="assets/js/functions.js"></script>
 </body>
 </html>

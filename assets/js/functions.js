@@ -1,33 +1,33 @@
-const zip = document.getElementById('zipcode').value
+// const zip = document.getElementById('zipcode').value
 
-const checkZipCode = () => {
-  if (zip > 20000) {
-    return true
-  } else {
-    return false
-  }
-}
+// const checkZipCode = () => {
+//   if (zip > 20000) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
 
-checkZipCode()
+//checkZipCode()
 
-const sumTotal = () => {
+const sumTotal = (event) => {
 
   let total = document.getElementById('total')
   let expr
 
-  let classicTen = classic.checked && tenP.checked
-  let classicFif = classic.checked && fifP.checked
-  let classicTw = classic.checked && twentyP.checked
-  let premiumTen = premium.checked && tenP.checked
-  let premiumFif = premium.checked && fifP.checked
-  let premiumTw = premium.checked && twentyP.checked
-  let royalTen = royal.checked && tenP.checked
-  let royalFif = royal.checked && fifP.checked
-  let royalTw = royal.checked && twentyP.checked
+  let classicTen = classic.checked && Number(tenP.checked)
+  let classicFif = classic.checked && Number(fifP.checked)
+  let classicTw = classic.checked && Number(twentyP.checked)
+  let premiumTen = premium.checked && Number(tenP.checked)
+  let premiumFif = premium.checked && Number(fifP.checked)
+  let premiumTw = premium.checked && Number(twentyP.checked)
+  let royalTen = royal.checked && Number(tenP.checked)
+  let royalFif = royal.checked && Number(fifP.checked)
+  let royalTw = royal.checked && Number(twentyP.checked)
 
-  switch(expr) {
+  switch (expr) {
     case classicTen:
-      total.textContent="$3.30"
+      total.textContent = "$3.30"
       break;
     case classicFif:
       total.textContent = "$3.45"
@@ -55,3 +55,9 @@ const sumTotal = () => {
       break;
   }
 }
+
+document.getElementById('request').addEventListener('click', event => {
+  event.preventDefault()
+  console.log('ping')
+  sumTotal()
+})
