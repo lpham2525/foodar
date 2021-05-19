@@ -1,15 +1,3 @@
-// const zip = document.getElementById('zipcode').value
-
-// const checkZipCode = () => {
-//   if (zip > 20000) {
-//     return true
-//   } else {
-//     return false
-//   }
-// }
-
-//checkZipCode()
-
 const sumTotal = (event) => {
 
   let total = document.getElementById('total')
@@ -56,7 +44,7 @@ const sumTotal = (event) => {
   }
 }
 
-document.getElementById('request').addEventListener('click', event => {
+document.getElementById("request").addEventListener('click', event => {
   event.preventDefault()
   console.log('ping')
   sumTotal()
