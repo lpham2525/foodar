@@ -1,14 +1,25 @@
-// const zip = document.getElementById('zipcode').value
+const zip = document.getElementById('zipCode').value
+const zipAlert = document.getElementById('zipAlert')
+const zipBtn = document.getElementById('zipBtn')
+const n = parseInt(document.querySelector("input[name='n']").value);
 
-// const checkZipCode = () => {
-//   if (zip > 20000) {
-//     return true
-//   } else {
-//     return false
-//   }
-// }
+const checkZipCode = () => {
+  zipBtn.addEventListener('click', (event) => {
+    console.log(event)
+    if (isNaN(n)) {
+      zipAlert.textContent = "Input must be a 5-digit integer."
+      zipAlert.className = "red"
+    } else if (zip > 20000 && zip < 20600) {
+      zipAlert.textContent = "We’ve got your area covered!"
+      zipAlert.className = "green"
+    } else {
+      zipAlert.textContent = "Sorry, we haven’t expanded to that area yet."
+      zipAlert.className = "red"
+    }
+  })
+}
 
-//checkZipCode()
+checkZipCode()
 
 const showBanner = () => {
   document.querySelector('.banner').style.display = 'block'
@@ -22,14 +33,10 @@ document.onreadystatechange = () => {
   }
 }
 
-// function talk() {
-//   alert("hello")
-// }
+const closeBanner = () => {
+  document.getElementById('close').addEventListener('click', () => {
+    document.querySelector('.banner').style.display = 'none'
+  })
+}
 
-// function consoleLog() {
-//   console.log("ping")
-// }
-
-// setTimeout(talk, 2000)
-
-// setTimeout(consoleLog, 3000)
+closeBanner()

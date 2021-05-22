@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/about.css">
   <title>Foodar</title>
 </head>
 <body>
   <div class="banner center">
+    <button id='close'>X</button>
     <p class="fontBorder">Hungry? Check. Food? Check. Delivery?
     <a href='./request.html' class="sideA">We got you covered.</a></p>
+    
   </div>
   <div class="header">
     <ul>
       <li class="big">Foodar</li>
-      <li class="float"><a href="./contact.html">Contact</a></li>
       <li class="float"><a href="./request.html">Delivery Request</a></li>
       <li class="float"><a href="./register.html">Sign-in/Register</a></li>
       <li class="float"><a href="./about.html">About</a></li>
@@ -26,11 +29,14 @@
     <img src="assets/images/hershey.gif" alt="hershey pie recipe" class="hershey">
     <p class="centered">Welcome to Foodar!</p>
   </div>
-  <div class="find">
-    <h1>Find a driver near you!</h1>
+  <div class="find center">
+    <h2>Find a driver near you!</h2>
     <p>Type in your zip code below and click Go! to find a driver near you.</p>
+    <br>
       <p>
-        <input type="text" placeholder="Zip Code" required min="1" step="1" maxlength="5" pattern="[^0-9]+" id="zipcode"/>
+        <!-- Need to create an input which takes only integers and limits the input to 5 integers maximum. -->
+        <input type="text" name="n" placeholder="Zip Code" required min="1" step="1" maxlength="5" pattern="[^0-9]+" id="zipCode"/>
+        <!-- <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="5" pattern="[^0-9]+" id="zipcode" /> -->
         <!-- <input type="text" pattern="[0-9]" maxlength="5"/> -->
         <!-- <input id="zip" name="zip" type="number" maxlength="5">
         <input type="text" pattern="[0-9]{5}" title="Five digit zip code" /> -->
@@ -39,25 +45,70 @@
         <!-- <input type="text" pattern="^\d{5}(-\d{4})?$"> -->
         <!-- <input type="text" pattern="[0-9]{4}" title="Four digit zip code" /> -->
         <!-- <input type="text" placeholder="Zip Code" title="Please enter a Zip Code" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$"> -->
-        <button>Go!</button>
+        <button id="zipBtn">Go!</button>
+        <br>
+        <br>
+        <div id="zipAlert" class="center"></div>
       </p>
+  </div>
+  <br>
+  <br>
+  <div class="center cadetBlue">
+    <h2>Featured Restaurants</h2>
+  </div>
+  <div class="featured center">
+    <div class="featR">
+      <img src="assets/images/cherry.jpg" alt="Amber Restaurant" class="restImg">
+      <h4 class="bold">CHERRY BLOSSOM</h4>
+      <p>A Japanese restaurant, interestingly, with a portrait of Marlon Brando on the walls.</p>
+      <div class="coupon">
+        <h3 class="coupon-title">COUPON</h3>
+        <p class="coupon-description">20% off for the Cherry Blossom Festival!</p>
+      </div>
+    </div>
+    <div class="featR">
+      <img src="assets/images/green.jpg" alt="Amber Restaurant" class="restImg">
+      <h4 class="bold">GREEN EATS</h4>
+        <p>A vegan/vegetarian restaurant with locally-sourced ingredients.</p>
+      <div class="coupon">
+      <h3 class="coupon-title">COUPON</h3>
+      <p class="coupon-description">25% off on Earth Day!</p>
+      </div>
+    </div>
+    <div class="featR">
+      <img src="assets/images/blue.jpg" alt="Amber Restaurant" class="restImg">
+      <h4 class="bold">VOLCANO VIEW</h4>
+      <p> A restaurant boasting sweeping views of the volcano and surrounding landscape.</p>
+      <div class="coupon">
+      <h3 class="coupon-title">COUPON</h3>
+      <p class="coupon-description">10% off for each tourist on first visit!</p>
+      </div>
+    </div>
   </div>
 
     <footer class="center">
         <div class="grid">
-      <ul>       
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./register.html">Register</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-      <p>
-        It's all in the delivery.
-      </p>
-      </div>
-        <p>&copy;Foodar 2021</p>
+          <ul>       
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./register.html">Register</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+          <div class="flavor">
+            It's 
+            <br>
+            all
+            <br> 
+            in 
+            <br>
+            the
+            <br> 
+            delivery. 
+          </div>
+        </div>
+            <p>&copy;Foodar 2021</p>
     </footer>  
     <script src="assets/js/index.js"></script>
 </body>

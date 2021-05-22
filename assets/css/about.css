@@ -1,25 +1,43 @@
-.marginLeft {
-  margin-left: 50px;
+body {
+  font-family: 'KoHo', sans-serif;
+}
+
+.padLeft {
+  padding-left: 50px;
 }
 
 .banner {
   width: 100%;
-  height: 150px;
-  font-size: 3.5rem; 
+  height: 5%;
+  font-size: 3.5rem;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 100px;
   background-image: url(../images/foodboxes.jpg);
   display: none;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fontBorder {
   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
 }
 
-.sideA{
+.sideA {
   display: inline-block;
   color: white;
+  margin: 0;
+}
+
+#close {
+  height: 40px;
+  width: 40px;
+  float: right;
+  padding: 2px 2px;
+  background: #ccc;
 }
 
 .container {
@@ -27,9 +45,14 @@
   grid-template-columns: 1fr 1fr;
 }
 
+h2 {
+  font-size: 25px;
+  font-weight: 900;
+  display: inline-block;
+}
+
 input {
-  margin-left: 50px;
-  width: 70%;
+  width: 50%;
 }
 
 .box {
@@ -47,6 +70,7 @@ input {
 
 .header {
   background-color: rgb(20, 155, 110);
+  box-shadow: 0px 0px 20px 0px #645f5f;
 }
 
 ul {
@@ -100,6 +124,11 @@ a:hover {
   color: black;
 }
 
+img {
+  box-shadow: 10px 10px 10px #464343;
+  margin-bottom: 20px;
+}
+
 input {
   padding: 5px;
 }
@@ -107,6 +136,102 @@ input {
 .find {
   width: 100%;
   height: 30%;
+}
+
+#zipAlert {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.green {
+  background-color: rgb(30, 150, 30);
+  box-shadow: 10px 10px 10px #464343;
+}
+
+.red {
+  background-color: red;
+  box-shadow: 10px 10px 10px #464343;
+}
+
+.cadetBlue {
+  padding-top: 20px;
+  background-color: cadetblue;
+}
+
+.featured {
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  box-shadow: 10px 10px 10px #464343;
+}
+
+.restImg {
+  width: 450px;
+  height: 300px;
+}
+
+.featR {
+  position: relative;
+  width: 400px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.coupon-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.coupon-description {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.coupon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.coupon:hover {
+  opacity: 1;
+}
+
+#text1 {
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#box1:hover #text1 {
+  opacity: 1;
 }
 
 footer {
@@ -120,7 +245,6 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-content: space-between;
   padding-right: 20px;
 }
 
@@ -129,4 +253,9 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.flavor {
+  padding-top: 20px;
+  font-weight: bolder;
 }
