@@ -52,7 +52,8 @@ h2 {
 }
 
 input {
-  width: 50%;
+  width: 100px;
+  padding: 5px;
 }
 
 .box {
@@ -129,13 +130,12 @@ img {
   margin-bottom: 20px;
 }
 
-input {
-  padding: 5px;
-}
-
 .find {
   width: 100%;
   height: 30%;
+  /* background-color: aquamarine;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 10px 10px 10px #464343; */
 }
 
 #zipAlert {
@@ -221,17 +221,10 @@ input {
   opacity: 1;
 }
 
-#text1 {
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-
-#box1:hover #text1 {
-  opacity: 1;
+#mailList{
+  margin: 50px 0px 50px 0px;
+  width: 100%;
+  height: 300px;
 }
 
 footer {
