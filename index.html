@@ -27,7 +27,7 @@
   </div>
   <div class="imgContainer">
     <img src="assets/images/hershey.gif" alt="hershey pie recipe" class="hershey">
-    <p class="centered">Welcome to Foodar!</p>
+    <p class="textOnImg">Welcome to Foodar!</p>
   </div>
   <div class="find center">
     <h2>Find a driver near you!</h2>
@@ -78,10 +78,17 @@
   </div>
   <div class="center" id="mailList">
     <h2>Join our mailing list for more coupons and info about new restaurants!</h2>
+    <br>
+    <br>
     <p>
       <label for="email" class="vAlign">Email</label>
-      <input type="email" placeholder="Email" required>
+      <input type="email" name="email" id="mailInput" required>
     </p>
+    <br>
+    <button id='mailBtn'>Sign Me Up!</button>
+    <br>
+    <br>
+    <div id="mailAlert"></div>
   </div>
 
     <footer class="center">

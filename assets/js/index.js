@@ -42,3 +42,22 @@ const closeBanner = () => {
 }
 
 closeBanner()
+
+const mailListSignUp = () => {
+
+
+  document.getElementById("mailBtn").addEventListener("click", () => {
+
+    mailInput = document.getElementById("mailInput").value
+
+    if (mailInput !== "") {
+      console.log(mailInput)
+      document.getElementById("mailAlert").textContent = "You are signed up for our mailing list!"
+    } else {
+      console.log(mailInput)
+      document.getElementById("mailAlert").textContent = "Please enter a valid email."
+    }
+  })
+}
+
+mailListSignUp()
