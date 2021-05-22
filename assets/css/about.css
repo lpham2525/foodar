@@ -131,12 +131,14 @@ a:hover {
   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
 }
 
+.black {
+  color: rgb(20, 155, 110);
+}
+
 .find {
   width: 100%;
   height: 30%;
-  padding: 50px 0px 20px 0px;
-  margin: 0;
-  margin-bottom: 0px;
+  padding: 50px 0px 80px 0px;
 }
 
 #zipAlert {
@@ -270,4 +272,18 @@ footer {
 .flavor {
   padding-top: 20px;
   font-weight: bolder;
+}
+
+@media screen and (max-width: 992px) {
+  .textOnImg {
+    
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
 }
