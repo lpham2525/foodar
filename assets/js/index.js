@@ -49,10 +49,11 @@ const mailListSignUp = () => {
   document.getElementById("mailBtn").addEventListener("click", () => {
 
     mailInput = document.getElementById("mailInput").value
+    const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-    if (mailInput !== "") {
-      console.log(mailInput)
+      if (mailInput !== "" && mailInput.match(mailFormat)) {
       document.getElementById("mailAlert").textContent = "You are signed up for our mailing list!"
+      document.getElementById("mailInput").value = " ";
     } else {
       console.log(mailInput)
       document.getElementById("mailAlert").textContent = "Please enter a valid email."

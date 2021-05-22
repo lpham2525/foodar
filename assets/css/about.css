@@ -131,17 +131,12 @@ a:hover {
   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
 }
 
-img {
-  box-shadow: 10px 10px 10px #464343;
-  margin-bottom: 20px;
-}
-
 .find {
   width: 100%;
   height: 30%;
-  /* background-color: aquamarine;
-  padding: 20px 0px 20px 0px;
-  box-shadow: 10px 10px 10px #464343; */
+  padding: 50px 0px 20px 0px;
+  margin: 0;
+  margin-bottom: 0px;
 }
 
 #zipAlert {
@@ -227,18 +222,36 @@ img {
   opacity: 1;
 }
 
-#mailList {
-  margin: 50px 0px 50px 0px;
+#recipe {
+  padding: 50px 0px 50px 0px;
   width: 100%;
-  height: 300px;
+  height: 30%;
+  background-color: teal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.hershey {
+  width: 50%;
+  height: 50%;
+}
+
+#mailList {
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+  height: 30%;
+  background-color: rgb(60, 60, 177);
 }
 
 footer {
-  margin: 10px 0 0 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(20, 155, 110);
   color: white;
   text-decoration: none;
-  padding: 5px;
 }
 
 .grid {
