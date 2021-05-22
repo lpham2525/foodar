@@ -1,18 +1,20 @@
-const zip = document.getElementById('zipCode').value
+
 const zipAlert = document.getElementById('zipAlert')
 const zipBtn = document.getElementById('zipBtn')
-const n = parseInt(document.querySelector("input[name='n']").value);
 
 const checkZipCode = () => {
-  zipBtn.addEventListener('click', (event) => {
-    console.log(event)
-    if (isNaN(n)) {
-      zipAlert.textContent = "Input must be a 5-digit integer."
+  zipBtn.addEventListener('click', () => {
+    let zip = parseInt(document.getElementById('zipCode').value)
+    if (zip == '' || isNaN(zip) || zip < 10000) {
+      console.log(zip)
+      zipAlert.textContent = "Please enter in a 5-digit zip code."
       zipAlert.className = "red"
-    } else if (zip > 20000 && zip < 20600) {
+    } else if (zip !== '' && zip > 20000 && zip < 20600) {
+      console.log(zip)
       zipAlert.textContent = "We’ve got your area covered!"
       zipAlert.className = "green"
     } else {
+      console.log(zip)
       zipAlert.textContent = "Sorry, we haven’t expanded to that area yet."
       zipAlert.className = "red"
     }
