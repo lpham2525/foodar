@@ -296,4 +296,8 @@ footer {
   .restImg {
     width: 300px;
   }
+  .coupon{
+    width: 300px;
+    margin-left:50px;
+  }
 }
