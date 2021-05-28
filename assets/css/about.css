@@ -274,30 +274,151 @@ footer {
   font-weight: bolder;
 }
 
-@media screen and (max-width: 992px) {
-  .textOnImg {
-    font-size: 45px;
-  }
+.line {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   .featured {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .featR {
+    padding-bottom: 50px;
+  }
+  p.blurb {
+    padding: 30px;
+  }
+  .hershey {
+    height: 500px;
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .textOnImg {
+    font-size: 60px;
+  }
   .featured {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .featR {
+    padding-bottom: 50px;
+  }
+  .restaurantH2 {
+    padding: 0px 20px 0px 20px;
+  }
+  p.blurb {
+    padding: 30px;
+  }
+  .hershey {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .textOnImg {
+    font-size: 60px;
+  }
+  .featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featR {
+    padding-bottom: 50px;
+  }
+  .hershey {
+    height: 350px;
+    width: 90%;
+  }
+  h2 {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .textOnImg {
+    font-size: 45px;
+  }
+  .delivery-man {
+    width: 90%;
+  }
+  .featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featR {
+    padding-bottom: 50px;
+  }
+  .restaurantH2 {
+    padding: 0px 20px 0px 20px;
+  }
+  p.blurb {
+    padding: 30px;
   }
   .restImg {
     width: 300px;
   }
-  .coupon{
+  .coupon {
     width: 300px;
-    margin-left:50px;
+    margin-left: 50px;
+  }
+  .hershey {
+    height: 250px;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 576px) {
+  .textOnImg {
+    font-size: 45px;
+    padding-top: 90px;
+  }
+  h2 {
+    padding: 0px 10px 0px 10px;
+  }
+  .delivery-man {
+    width: 90%;
+  }
+  h2.restaurantH2 {
+    padding: 0px 10px 0px 10px;
+  }
+  .featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featR {
+    width: 280px;
+    padding-bottom: 50px;
+  }
+  .restImg {
+    width: 250px;
+  }
+  p.blurb {
+    padding: 20px;
+  }
+  div.coupon {
+    width: 280px;
+  }
+  .coupon-description {
+    font-size: 1rem;
+  }
+  .hershey {
+    height: 250px;
+    width: 90%;
+  }
+  .flavor {
+    padding-bottom: 20px;
   }
 }
