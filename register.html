@@ -20,9 +20,8 @@
   </div>
   <div class="regContainer">
   <h1>Register</h1>
-  <div>
   <p>Please fill out the form below:</p>
-    <form>
+    <form class="indent">
       <p class="bold">Details:</p>
       <div class="container">
       <p>
@@ -45,28 +44,28 @@
       </div>
       <p class="bold">Address:</p>
       <div class="container">
-      <p>
-        <label name="address" class="vAlign">Address</label>
-      <input type="number" placeholder="Address" required min="1" step="1">
-      </p>
-      <p>
-        <label name="street" class="vAlign">Street</label>
-      <input type="text" placeholder="Street" required>
-      </p>
-      <p>
-        <label name="city" class="vAlign">City</label>
-      <input type="text" placeholder="City" required>
-      </p>
-      <p>
-        <label name="zip-code" class="vAlign">Zip Code</label>
-      <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="2">
-      </p>
+        <p>
+          <label name="address" class="vAlign">Address</label>
+        <input type="number" placeholder="Address" required min="1" step="1">
+        </p>
+        <p>
+          <label name="street" class="vAlign">Street</label>
+        <input type="text" placeholder="Street" required>
+        </p>
+        <p>
+          <label name="city" class="vAlign">City</label>
+        <input type="text" placeholder="City" required>
+        </p>
+        <p>
+          <label name="zip-code" class="vAlign">Zip Code</label>
+        <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="2">
+        </p>
       </div>
       <button id ='register'>Register</button>
     </form>
     <br>
   </div>
-  </div>
+  <div id="regAlert"></div>
     <footer class="center">
       <div class="grid">
         <ul>

@@ -279,7 +279,12 @@ footer {
 }
 
 .regContainer {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 50px;
+}
+
+.indent {
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
