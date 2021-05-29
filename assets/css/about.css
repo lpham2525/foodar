@@ -278,6 +278,10 @@ footer {
   display: block;
 }
 
+.regContainer {
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .featured {
     display: flex;
