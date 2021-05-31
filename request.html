@@ -12,24 +12,27 @@
 <body>
   <div class="header">
     <ul>
+      <img src="assets/images/platter2.jpg" alt="company logo" class="platter">
       <li class="big">Foodar</li>
       <li class="float"><a href="./register.html">Sign-in/Register</a></li>
       <li class="float"><a href="./about.html">About</a></li>
       <li class="float"><a href="./index.html">Home</a></li>
     </ul>
   </div>
-  <h1>SUBMIT REQUEST</h1>
-  <p>Please fill out the form below.</p>
-  <form class="marginLeft" id="form">
-      <div>
+  <h1 class="indent">SUBMIT REQUEST</h1>
+  <p class="indent">Please fill out the form below.</p>
+  <form id="form">
+      <div class="marginLeft">
       <p>
         <label for="address">Email:</label>
       </p>
       <p>
-        <input type="email" placeholder="Email" required>
+        <input type="email" name="email" id="mailInput" required>
       </p>
     </div>
-    <p>Choose your style:</p>
+    <br>
+    <p class="marginLeft">Choose your style:</p>
+    <br>
     <div class="side">
       <div class="box">
         <label name="classicRequest" class="vAlign">Classic</label>
@@ -50,14 +53,17 @@
         <input class="styles" type="radio" id="royal" name="style" value="10">
       </div>
     </div>
-    <div>
+    <div class="marginLeft">
       <p>
         <label for="restaurantName" class="vAlign" required>Restaurant Name:</label>
       </p>
       <p>
-        <input type="text" placeholder="restaurant name" required>
+        <input type="text" placeholder="restaurant name" id="restaurant" required>
       </p>
-      <p>Tip:</p>
+    </div>
+      <br>
+      <p class="marginLeft">Tip:</p>
+      <br>
       <div class="side">
         <div class="box">
           <label name="tenPer" class="vAlign">10%</label>

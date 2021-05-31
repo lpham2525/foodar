@@ -74,8 +74,8 @@ input {
 }
 
 .box {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border: black solid;
   text-align: center;
   padding: 10px;
@@ -300,12 +300,18 @@ footer {
 }
 
 .regContainer {
-  /* text-align: center; */
   margin-left: 50px;
 }
 
 .indent {
   margin-left: 50px;
+}
+
+/* #form{
+  text-align: center;
+} */
+.marginLeft {
+  margin-left: 350px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
