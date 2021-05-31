@@ -1,4 +1,3 @@
-
 const zipAlert = document.getElementById('zipAlert')
 const zipBtn = document.getElementById('zipBtn')
 
