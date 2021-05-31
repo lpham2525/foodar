@@ -58,7 +58,7 @@
         </p>
         <p>
           <label name="zip-code" class="vAlign">Zip Code</label>
-        <input type="number" placeholder="Zip Code" required min="1" step="1" maxlength="2">
+        <input type="number" onKeyPress="if(this.value.length==5) return false;" id="zipCode" />
         </p>
       </div>
       <button id ='register'>Register</button>
