@@ -58,7 +58,7 @@
         <label for="restaurantName" class="vAlign" required>Restaurant Name:</label>
       </p>
       <p>
-        <input type="text" placeholder="restaurant name" id="restaurant" required>
+        <input type="text" id="restaurant" required>
       </p>
     </div>
       <br>
@@ -85,6 +85,7 @@
     <div class='center'>
       <h1>Total: <span id='total'></span></h1>
       <button id="request" type="button" onclick="requestMade()">Request</button>
+      <button id="cancel" type="button" onclick="cancelRequest()">Cancel</button>
       <br>
       <br>
       <div id="requestDiv"></div>

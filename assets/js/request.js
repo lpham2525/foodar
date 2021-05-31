@@ -23,23 +23,35 @@ const calculateTotal = () => {
 document.getElementById("form").addEventListener("change", calculateTotal)
 
 const requestMade = () => {
-  document.getElementById('request').addEventListener('click', () => {
 
-    let mailInput = document.getElementById('mailInput').value
-    let restaurant = document.getElementById('restaurant').value
-    const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  let mailInput = document.getElementById('mailInput').value
+  let restaurant = document.getElementById('restaurant').value
+  const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-    if (mailInput !== '' && restaurant !== '' && mailInput.match(mailFormat)) {
-      document.getElementById('requestDiv').textContent = "Request processed! Your food is on its way!"
-      console.log('done!')
-    } else if (mailInput == '' || !mailInput.match(mailFormat)) {
-      console.log(mailInput)
-      document.getElementById('requestDiv').textContent = "Please enter in a valid email."
-    } else if (restaurant == '') {
-      console.log(restaurant)
-      document.getElementById('requestDiv').textContent = "Please enter in a restaurant name."
-    } else {
-      document.getElementById('requestDiv').textContent = "There was a problem processing the request."
-    }
-  })
+  if (mailInput !== '' && restaurant !== '' && mailInput.match(mailFormat)) {
+    document.getElementById('requestDiv').textContent = "Request processed! Your food is on its way!"
+    console.log(mailInput, restaurant)
+  } else if (mailInput == '' || !mailInput.match(mailFormat)) {
+    console.log(mailInput)
+    document.getElementById('requestDiv').textContent = "Please enter in a valid email."
+  } else if (restaurant == '') {
+    console.log(restaurant)
+    document.getElementById('requestDiv').textContent = "Please enter in a restaurant name."
+  } else {
+    document.getElementById('requestDiv').textContent = "There was a problem processing the request."
+  }
+}
+
+const cancelRequest = () => {
+
+  document.getElementById('restaurant').value = ''
+  document.getElementById('total').innerHTML = ''
+
+  let styles = document.getElementsByName("style")
+  for (let i = 0; i < styles.length; i++)
+    styles[i].checked = false
+
+  let tips = document.getElementsByName("tip")
+  for (let i = 0; i < tips.length; i++)
+    tips[i].checked = false
 }
