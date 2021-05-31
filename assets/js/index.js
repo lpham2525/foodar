@@ -50,7 +50,7 @@ const mailListSignUp = () => {
     mailInput = document.getElementById("mailInput").value
     const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-      if (mailInput !== "" && mailInput.match(mailFormat)) {
+    if (mailInput !== "" && mailInput.match(mailFormat)) {
       document.getElementById("mailAlert").textContent = "You are signed up for our mailing list!"
       document.getElementById("mailInput").value = " ";
     } else {
@@ -61,3 +61,16 @@ const mailListSignUp = () => {
 }
 
 mailListSignUp()
+
+ImageArray = new Array()
+ImageArray[0] = 'hershey.gif'
+ImageArray[1] = 'lemon_bars.png'
+ImageArray[2] = 'tiramisu.png'
+
+const changeImage = () => {
+  let num = Math.floor(Math.random() * 3)
+  let img = ImageArray[num]
+  document.getElementById("changeRecipe").innerHTML = ('<img src="' + 'assets/images/' + img + '" width="800px" height="500px">')
+}
+
+window.onload = changeImage;
