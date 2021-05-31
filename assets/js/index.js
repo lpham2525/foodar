@@ -64,7 +64,7 @@ mailListSignUp()
 
 ImageArray = new Array()
 ImageArray[0] = 'hershey.gif'
-ImageArray[1] = 'lemon_bars.png'
+ImageArray[1] = 'blackberry.png'
 ImageArray[2] = 'tiramisu.png'
 
 const changeImage = () => {
