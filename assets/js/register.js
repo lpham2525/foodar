@@ -11,7 +11,6 @@ register.addEventListener('click', () => {
 
 const mailListSignUp = () => {
 
-
   document.getElementById("register").addEventListener("click", () => {
 
     mailInput = document.getElementById("mailInput").value

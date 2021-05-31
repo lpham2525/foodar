@@ -73,4 +73,4 @@ const changeImage = () => {
   document.getElementById("changeRecipe").innerHTML = ('<img src="' + 'assets/images/' + img + '" width="800px" height="500px">')
 }
 
-window.onload = changeImage;
+window.onload = changeImage

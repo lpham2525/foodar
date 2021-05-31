@@ -54,7 +54,7 @@ body {
   -ms-border-radius: 20%;
   -o-border-radius: 20%;
   vertical-align: text-bottom;
-  padding-left: 5px;
+  margin: 10px 0px 0px 25px;
 }
 
 h2 {

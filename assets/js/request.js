@@ -22,8 +22,6 @@ const calculateTotal = () => {
 
 document.getElementById("form").addEventListener("change", calculateTotal)
 
-
-
 const requestMade = () => {
   document.getElementById('request').addEventListener('click', () => {
 
@@ -45,4 +43,3 @@ const requestMade = () => {
     }
   })
 }
-
