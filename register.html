@@ -21,12 +21,13 @@
   <div class="regContainer">
   <h1>Register</h1>
   <p>Please fill out the form below:</p>
-    <form class="indent">
+  <div class="indent">
+    <form>
       <p class="bold">Details:</p>
       <div class="container">
       <p>
         <label for="email" class="vAlign">Email</label>
-      <input type="email" placeholder="Email" required>
+      <input type="email" name="email" id="mailInput" placeholder="Email" required>
       </p>
       <p>
         <label for="password" class="vAlign">Password</label>
@@ -58,11 +59,12 @@
         </p>
         <p>
           <label name="zip-code" class="vAlign">Zip Code</label>
-        <input type="number" onKeyPress="if(this.value.length==5) return false;" id="zipCode" />
+        <input type="number" onKeyPress="if(this.value.length==5) return false;" id="zipCode" required/>
         </p>
       </div>
       <button id ='register'>Register</button>
     </form>
+    </div>
     <br>
   </div>
   <div id="regAlert"></div>

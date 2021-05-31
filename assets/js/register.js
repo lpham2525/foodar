@@ -9,3 +9,24 @@ register.addEventListener('click', () => {
   }
 })
 
+const mailListSignUp = () => {
+
+
+  document.getElementById("register").addEventListener("click", () => {
+
+    mailInput = document.getElementById("mailInput").value
+    regAlert = document.getElementById("regAlert")
+
+    const mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+    if (mailInput !== "" && mailInput.match(mailFormat)) {
+      regAlert.textContent = "You are now registered!"
+      mailInput.value = " ";
+    } else {
+      console.log(mailInput)
+      regAlert.textContent = "Please enter a valid email."
+    }
+  })
+}
+
+mailListSignUp()
